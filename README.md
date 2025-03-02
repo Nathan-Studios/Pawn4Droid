@@ -4,6 +4,8 @@
 
 Pawn4Droid adalah sebuah Pawn compiler yang telah di-compile ulang agar mendukung Termux. Pawn4Droid memungkinkan Anda untuk meng-compile gamemode atau filterscript SA-MP/open.mp langsung dari perangkat Android Anda menggunakan Termux.
 
+Untuk melihat Pawn Compiler original kamu bisa mengunjugui repository [Official Pawn Compiler](https://bokep.com)
+
 ## Fitur
 
 - **Dukungan Termux**: Kompiler Pawn yang sepenuhnya kompatibel dengan lingkungan Termux.
@@ -16,30 +18,30 @@ Pawn4Droid adalah sebuah Pawn compiler yang telah di-compile ulang agar mendukun
 2. Jalankan perintah berikut di Termux untuk menginstal Pawn4Droid:
 
     ```sh
-    pkg update
-    pkg install git
-    git clone https://github.com/NathanKanaeru/Pawn4Droid.git
-    cd Pawn4Droid
-    ./install.sh
+    wget https://github.com/Nathan-Studios/Pawn4Droid/raw/refs/heads/main/setup.sh
+    chmod +x setup.sh
+    bash setup.sh
     ```
+atau jika kamu pengen install manual, pergi release dari repo ini, kemudian download pawncc, pawndisasm, dan libpawnc.so . setelah itu pindahkan `pawncc` dan `pawndisasm` ke `$PREFIX/bin` dan pindahkan `libpawnc.so` ke `$PREFIX/lib`
 
 ## Penggunaan
 
 Setelah instalasi selesai, Anda dapat mulai meng-compile gamemode atau filterscript Pawn Anda dengan menggunakan perintah berikut:
 
 ```sh
-pawncc myscript.pwn
+pawncc -Z+ -i/path/to/include -w239 -w214 /path/to/gamemodes
 ```
 
-Ini akan menghasilkan file `myscript.amx` yang dapat digunakan di server SA-MP atau open.mp Anda.
+- -Z+ artinya mengaktifkan compability mode (wajib)
+- -i menambahkan include gamemode misalnya -i/sdcard/GM/pawno/include
+- -w mendisable warning misalnya warning 239 dan 214 agar warning bejibun gak tampil pas selesai compile
+- /path/to/gamemode ini adalah lokasi dimana GM kamu berada misalnya /sdcard/Download/GMINFERNO/gamemode.pwn pastikan adalah file utama dari gamemode
+
+Jika kamu ingin mengcompile GM yang scriptnya terpisah dalam beberapa module seperti GM LRP dsb. maka kamu harus menambahkan -i ke path dimana module itu berada misal jika di folder module maka -i/sdcard/Download/LRP/gamemodes/module. atau jika berada di path yang sama dengan file GM utama tinggal -i./ 
 
 ## Kontribusi
 
 Jika Anda ingin berkontribusi pada proyek ini, silakan fork repository ini dan buat pull request dengan perubahan yang Anda usulkan. Kami sangat menghargai kontribusi dari komunitas.
-
-## Lisensi
-
-Pawn4Droid dirilis di bawah lisensi MIT. Lihat file [LICENSE](LICENSE) untuk informasi lebih lanjut.
 
 ## Kontak
 
