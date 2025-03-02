@@ -1,0 +1,55 @@
+# Pawn Compiler License
+
+The software toolkit "Pawn" (the compiler, the abstract machine and the
+documentation) are copyright (c) 1997-2006 by ITB CompuPhase. The Intel
+assembler implementation of the abstract machine and the just-in-time
+compiler (specifically the files AMXEXEC.ASM, JITR.ASM and JITS.ASM) are
+copyright (c) 1998-2003 Marc Peter. The file JITSN.ASM is translated from
+JITS.ASM and is partially copyright G.W.M. Vissers. The file AMXEXECN.ASM
+is translated from AMXEXEC.ASM and is partially copyright ITB CompuPhase.
+
+Pawn is distributed under the "zLib/libpng" license, which is reproduced
+below:
+
+-----------------------------------------------------------------------------
+
+This software is provided "as-is", without any express or implied warranty.
+In no event will the authors be held liable for any damages arising from
+the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software in
+   a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+
+2. Altered source versions must be plainly marked as such, and must not
+   be misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source distribution.
+
+-----------------------------------------------------------------------------
+
+The zLib/libpng license has been approved by the "Open Source Initiative"
+organization.
+
+---
+
+# Modifications License (for Pawn4Droid)
+
+The modifications made to Pawn compiler to support Termux by NathanKanaeru are distributed under the following license terms:
+
+1. Permission is granted to use and modify the software for personal use only.
+2. Redistribution of the modified software is not allowed without explicit written permission from NathanKanaeru.
+3. The modified software, or any part of it, must not be sold or used for commercial purposes without explicit written permission from NathanKanaeru.
+4. The origin of this software must not be misrepresented; you must not claim that you wrote the original software.
+5. This notice must not be removed or altered from any source distribution.
+
+For permissions and inquiries, please contact NathanKanaeru via [GitHub Issues](https://github.com/NathanKanaeru/Pawn4Droid/issues).
+
+---
+
+This combined licensing ensures compliance with the original license of the Pawn compiler and adds specific restrictions for the modifications made to support Termux
