@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # URL untuk download pawncc, libpawnc.so, dan pawndisasm
-PAWNCC_URL="https://github.com/Nathan-Studios/Pawn4Droid/releases/download/v3.>
-LIBPAWNC_URL="https://github.com/Nathan-Studios/Pawn4Droid/releases/download/v>
-PAWNDISASM_URL="https://github.com/Nathan-Studios/Pawn4Droid/releases/download>
+PAWNCC_URL="https://github.com/Nathan-Studios/Pawn4Droid/releases/download/v3.10.10/pawncc"
+LIBPAWNC_URL="https://github.com/Nathan-Studios/Pawn4Droid/releases/download/v3.10.10/libpawnc.so"
+PAWNDISASM_URL="https://github.com/Nathan-Studios/Pawn4Droid/releases/download/v3.10.10/pawndisasm"
 
 # Lokasi tujuan
 BIN_DIR="$PREFIX/bin"
@@ -47,4 +47,4 @@ echo "Moving pawndisasm to $BIN_DIR..."
 mv pawndisasm $BIN_DIR
 chmod +x $BIN_DIR/pawndisasm
 
-echo "Setup completed successfully!
+echo "Setup completed successfully!"
