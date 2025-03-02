@@ -1,6 +1,6 @@
 # Pawn4Droid
 
-![Pawn4Droid Logo](https://via.placeholder.com/150)
+![Pawn4Droid Logo](./icon.jpg)
 
 Pawn4Droid adalah sebuah Pawn compiler yang telah di-compile ulang agar mendukung Termux. Pawn4Droid memungkinkan Anda untuk meng-compile gamemode atau filterscript SA-MP/open.mp langsung dari perangkat Android Anda menggunakan Termux.
 
