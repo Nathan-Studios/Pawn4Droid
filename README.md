@@ -37,7 +37,9 @@ pawncc -Z+ -i/path/to/include -w239 -w214 /path/to/gamemodes
 - -w mendisable warning misalnya warning 239 dan 214 agar warning bejibun gak tampil pas selesai compile
 - /path/to/gamemode ini adalah lokasi dimana GM kamu berada misalnya /sdcard/Download/GMINFERNO/gamemode.pwn pastikan adalah file utama dari gamemode
 
-Jika kamu ingin mengcompile GM yang scriptnya terpisah dalam beberapa module seperti GM LRP dsb. maka kamu harus menambahkan -i ke path dimana module itu berada misal jika di folder module maka -i/sdcard/Download/LRP/gamemodes/module. atau jika berada di path yang sama dengan file GM utama tinggal -i./ 
+Jika kamu mengcompile gamemode yang scriptnya dipisah dalam beberapa file (module) maka:
+- tambahkan -i ke lokasi module misalnya -i/sdcard/GM/module
+- jika module berada di lokasi yang sama dengan gm utama maka tinggal -i./
 
 Untuk dokumentasi lebih lengkap silahkan cek [Original Pawn Compiler](https://github.com/pawn-lang/compiler)
 
