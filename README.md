@@ -20,8 +20,8 @@ Untuk melihat Pawn Compiler original kamu bisa mengunjugui repository [Official 
     ```sh
     rm setup-pawncc.sh
     wget https://github.com/Nathan-Studios/Pawn4Droid/raw/refs/heads/main/setup-pawncc.sh
-    chmod +x setup.sh
-    bash setup.sh
+    chmod +x setup-pawncc.sh
+    bash setup-pawncc.sh
     ```
 atau jika kamu pengen install manual, pergi release dari repo ini, kemudian download pawncc, pawndisasm, dan libpawnc.so . setelah itu pindahkan `pawncc` dan `pawndisasm` ke `$PREFIX/bin` dan pindahkan `libpawnc.so` ke `$PREFIX/lib`
 
