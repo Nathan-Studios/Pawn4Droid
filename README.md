@@ -18,7 +18,8 @@ Untuk melihat Pawn Compiler original kamu bisa mengunjugui repository [Official 
 2. Jalankan perintah berikut di Termux untuk menginstal Pawn4Droid:
 
     ```sh
-    wget https://github.com/Nathan-Studios/Pawn4Droid/raw/refs/heads/main/setup.sh
+    rm setup-pawncc.sh
+    wget https://github.com/Nathan-Studios/Pawn4Droid/raw/refs/heads/main/setup-pawncc.sh
     chmod +x setup.sh
     bash setup.sh
     ```
